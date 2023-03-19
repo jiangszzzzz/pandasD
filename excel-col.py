@@ -31,6 +31,5 @@ type_list = set(type_list)
 for ty in type_list:
     data[data['genre'].str.contains(ty)].to_excel(writer, sheet_name=ty)
 
-
 writer.close()
 
